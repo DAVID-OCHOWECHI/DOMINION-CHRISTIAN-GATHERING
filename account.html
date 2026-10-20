@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f8f6f1">
+    <meta name="description" content="Sign in or create a member account for Dominion Christian Gathering International.">
+    <link rel="icon" type="image/svg+xml" href="IMGS/favicon.svg">
+    <title>Member Account | Dominion Christian Gathering International</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="STYLES/main.css"><link rel="stylesheet" href="STYLES/nav.css"><link rel="stylesheet" href="STYLES/pages.css">
+    <script src="SCRIPTS/site.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header"><nav class="nav wrap" aria-label="Main navigation">
+        <a class="logo" href="index.html" aria-label="Dominion Christian Gathering International home"><img src="IMGS/logo.png" alt="" id="logo-img"><span class="brand-copy"><strong>DOMINION</strong><small>CHRISTIAN GATHERING</small></span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu"><span class="sr-only">Open navigation menu</span><span></span><span></span></button>
+        <ul class="menuLinks" id="primary-menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="activities.html">Ministries</a></li><li><a href="mission.html">Our mission</a></li><li><a href="resources.html">Resources</a></li><li><a href="ebooks.html">E-books</a></li><li><a href="sermons.html">Sermons</a></li></ul>
+        <a class="nav-cta" href="visit.html">Plan a visit <span aria-hidden="true">↗</span></a>
+    </nav></header>
+    <main id="main" class="account-page">
+        <section class="account-shell wrap">
+            <div class="account-welcome"><p class="eyebrow"><span></span> The Dominion community</p><h1>A place to<br><em>grow together.</em></h1><p>Sign in to your member account, or create one to stay connected with your church community.</p><div class="account-verse"><span aria-hidden="true">“</span><p>Encourage one another and build each other up.</p><small>1 Thessalonians 5:11</small></div></div>
+            <div class="account-card">
+                <div class="account-tabs" role="tablist" aria-label="Member account options">
+                    <button id="login-tab" type="button" role="tab" aria-selected="true" aria-controls="login-panel" data-account-view="login">Sign in</button>
+                    <button id="register-tab" type="button" role="tab" aria-selected="false" aria-controls="register-panel" data-account-view="register">Create account</button>
+                </div>
+                <section id="login-panel" role="tabpanel" aria-labelledby="login-tab" data-account-panel="login">
+                    <h2>Welcome back.</h2><p class="account-subtitle">Sign in to your member account.</p>
+                    <form class="account-form" data-backend-form="login">
+                        <label class="field-label" for="login-email">Email address</label><input id="login-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                        <label class="field-label" for="login-password">Password</label><input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+                        <div class="form-notice" role="status" aria-live="polite" data-form-status>Account sign-in will be available when the church backend is connected. This form does not send or store your details.</div>
+                        <button class="button button-dark form-submit" type="submit">Sign in <span aria-hidden="true">→</span></button>
+                    </form>
+                    <p class="account-switch">New to the community? <button type="button" data-account-view="register">Create an account</button></p>
+                </section>
+                <section id="register-panel" role="tabpanel" aria-labelledby="register-tab" data-account-panel="register" hidden>
+                    <h2>Let’s get connected.</h2><p class="account-subtitle">Create your church member account.</p>
+                    <form class="account-form" data-backend-form="register">
+                        <label class="field-label" for="register-name">Full name</label><input id="register-name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+                        <label class="field-label" for="register-email">Email address</label><input id="register-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                        <label class="field-label" for="register-password">Create a password</label><input id="register-password" name="password" type="password" autocomplete="new-password" minlength="8" placeholder="At least 8 characters" required>
+                        <label class="field-label" for="register-confirm">Confirm password</label><input id="register-confirm" name="password-confirm" type="password" autocomplete="new-password" minlength="8" placeholder="Enter your password again" required>
+                        <label class="check-row"><input type="checkbox" name="terms" required><span>I agree to create a member account with Dominion Christian Gathering International.</span></label>
+                        <div class="form-notice" role="status" aria-live="polite" data-form-status>Account registration will be available when the church backend is connected. This form does not send or store your details.</div>
+                        <button class="button button-dark form-submit" type="submit">Create my account <span aria-hidden="true">→</span></button>
+                    </form>
+                    <p class="account-switch">Already have an account? <button type="button" data-account-view="login">Sign in</button></p>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer"><div class="wrap footer-main"><a class="logo footer-logo" href="index.html"><img src="IMGS/logo.png" alt="" id="footer-logo-img"><span class="brand-copy"><strong>DOMINION</strong><small>CHRISTIAN GATHERING</small></span></a><p>A community growing in faith, sharing Christ’s love and serving together.</p><div class="footer-links"><a href="about.html">About</a><a href="activities.html">Ministries</a><a href="mission.html">Our mission</a><a href="resources.html">Resources</a><a href="ebooks.html">E-books</a><a href="sermons.html">Sermons</a><a href="visit.html">Plan a visit</a><a href="account.html">Member sign in</a></div></div><div class="wrap footer-bottom"><span>© <span data-year>2026</span> Dominion Christian Gathering International</span><span>All are welcome.</span></div></footer>
+</body>
+</html>

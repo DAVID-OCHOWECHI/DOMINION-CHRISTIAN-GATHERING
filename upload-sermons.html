@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f8f6f1">
+    <meta name="description" content="Prepare an audio sermon for the Dominion Christian Gathering sermon library.">
+    <link rel="icon" type="image/svg+xml" href="IMGS/favicon.svg">
+    <title>Upload an Audio Sermon | Dominion Christian Gathering International</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="STYLES/main.css"><link rel="stylesheet" href="STYLES/nav.css"><link rel="stylesheet" href="STYLES/pages.css">
+    <script src="SCRIPTS/site.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header"><nav class="nav wrap" aria-label="Main navigation">
+        <a class="logo" href="index.html" aria-label="Dominion Christian Gathering International home"><img src="IMGS/logo.png" alt="" id="logo-img"><span class="brand-copy"><strong>DOMINION</strong><small>CHRISTIAN GATHERING</small></span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu"><span class="sr-only">Open navigation menu</span><span></span><span></span></button>
+        <ul class="menuLinks" id="primary-menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="activities.html">Ministries</a></li><li><a href="mission.html">Our mission</a></li><li><a href="resources.html">Resources</a></li><li><a href="ebooks.html">E-books</a></li><li><a class="active" aria-current="page" href="sermons.html">Sermons</a></li></ul>
+        <a class="nav-cta" href="account.html">Member sign in <span aria-hidden="true">↗</span></a>
+    </nav></header>
+    <main id="main" class="upload-page">
+        <section class="upload-heading wrap"><a class="back-link" href="sermons.html"><span aria-hidden="true">←</span> Back to sermon library</a><p class="eyebrow"><span></span> Audio library · contributor</p><h1>Share a message<br>for the <em>journey.</em></h1><p>Add the sermon recording and its key details so listeners can find, play and revisit the message.</p></section>
+        <section class="wrap upload-layout">
+            <form class="upload-form" data-backend-form="sermon">
+                <div class="form-section-title"><span>01</span><div><h2>About this message</h2><p>Help listeners understand what they’re about to hear.</p></div></div>
+                <label class="field-label" for="sermon-title">Sermon title <span>*</span></label><input id="sermon-title" name="title" type="text" placeholder="Enter the message title" required>
+                <div class="field-row"><div><label class="field-label" for="sermon-speaker">Speaker <span>*</span></label><input id="sermon-speaker" name="speaker" type="text" placeholder="Speaker’s name" required></div><div><label class="field-label" for="sermon-date">Date preached</label><input id="sermon-date" name="date" type="date"></div></div>
+                <div class="field-row"><div><label class="field-label" for="sermon-scripture">Scripture reference</label><input id="sermon-scripture" name="scripture" type="text" placeholder="e.g. John 15:1–8"></div><div><label class="field-label" for="sermon-series">Series or topic</label><input id="sermon-series" name="series" type="text" placeholder="Optional series name"></div></div>
+                <label class="field-label" for="sermon-description">Description <span class="optional">(optional)</span></label><textarea id="sermon-description" name="description" rows="3" placeholder="A short introduction to the message"></textarea>
+                <div class="form-section-title form-section-spaced"><span>02</span><div><h2>Add the recording</h2><p>Upload a clear audio file for the church sermon library.</p></div></div>
+                <label class="field-label" for="sermon-file">Audio file <span>*</span></label><label class="dropzone" for="sermon-file"><span class="upload-icon" aria-hidden="true">♫</span><strong>Choose an audio recording</strong><span>MP3, M4A or WAV · maximum 200 MB</span><span class="selected-file" data-file-name="sermon-file">No file selected</span></label><input class="file-input" id="sermon-file" name="audio" type="file" accept="audio/mpeg,audio/mp4,audio/wav,audio/x-wav,.mp3,.m4a,.wav" data-file-input data-max-bytes="209715200" required>
+                <div class="audio-preview" data-audio-preview hidden><p class="field-label">Local preview <span class="optional">Only available in this browser</span></p><audio controls preload="metadata"></audio></div>
+                <label class="check-row"><input type="checkbox" name="rights-confirmed" required><span>I confirm this recording is approved for sharing with the church community. <b>*</b></span></label>
+                <div class="form-notice" role="status" aria-live="polite" data-form-status>This form is ready for your backend. Sermons are not uploaded or published by this frontend.</div>
+                <button class="button button-dark form-submit" type="submit">Prepare sermon <span aria-hidden="true">→</span></button>
+            </form>
+            <aside class="upload-aside"><span class="note-mark" aria-hidden="true">✳</span><p class="eyebrow">Before you publish</p><h2>Clear details help people <em>listen.</em></h2><ul><li>Give the message a concise title.</li><li>Include the speaker and Bible passage.</li><li>Use an MP3, M4A or WAV audio file.</li><li>Confirm the recording is approved to share.</li></ul><p class="aside-small">Uploads, pastor permissions and audio storage need to be connected to your backend.</p></aside>
+        </section>
+    </main>
+    <footer class="site-footer"><div class="wrap footer-main"><a class="logo footer-logo" href="index.html"><img src="IMGS/logo.png" alt="" id="footer-logo-img"><span class="brand-copy"><strong>DOMINION</strong><small>CHRISTIAN GATHERING</small></span></a><p>A community growing in faith, sharing Christ’s love and serving together.</p><div class="footer-links"><a href="about.html">About</a><a href="activities.html">Ministries</a><a href="mission.html">Our mission</a><a href="resources.html">Resources</a><a href="ebooks.html">E-books</a><a href="sermons.html">Sermons</a><a href="visit.html">Plan a visit</a><a href="account.html">Member sign in</a></div></div><div class="wrap footer-bottom"><span>© <span data-year>2026</span> Dominion Christian Gathering International</span><span>All are welcome.</span></div></footer>
+</body>
+</html>

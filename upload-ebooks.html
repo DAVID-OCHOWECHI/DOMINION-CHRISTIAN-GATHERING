@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f8f6f1">
+    <meta name="description" content="Prepare an e-book for the Dominion Christian Gathering library.">
+    <link rel="icon" type="image/svg+xml" href="IMGS/favicon.svg">
+    <title>Upload an E-book | Dominion Christian Gathering International</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="STYLES/main.css"><link rel="stylesheet" href="STYLES/nav.css"><link rel="stylesheet" href="STYLES/pages.css">
+    <script src="SCRIPTS/site.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header"><nav class="nav wrap" aria-label="Main navigation">
+        <a class="logo" href="index.html" aria-label="Dominion Christian Gathering International home"><img src="IMGS/logo.png" alt="" id="logo-img"><span class="brand-copy"><strong>DOMINION</strong><small>CHRISTIAN GATHERING</small></span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu"><span class="sr-only">Open navigation menu</span><span></span><span></span></button>
+        <ul class="menuLinks" id="primary-menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="activities.html">Ministries</a></li><li><a href="mission.html">Our mission</a></li><li><a href="resources.html">Resources</a></li><li><a class="active" aria-current="page" href="ebooks.html">E-books</a></li><li><a href="sermons.html">Sermons</a></li></ul>
+        <a class="nav-cta" href="account.html">Member sign in <span aria-hidden="true">↗</span></a>
+    </nav></header>
+    <main id="main" class="upload-page">
+        <section class="upload-heading wrap"><a class="back-link" href="ebooks.html"><span aria-hidden="true">←</span> Back to e-book library</a><p class="eyebrow"><span></span> Church library · contributor</p><h1>Share a word<br>that <em>encourages.</em></h1><p>Prepare a book for the church library. Add clear details so readers can understand what it covers before they open it.</p></section>
+        <section class="wrap upload-layout">
+            <form class="upload-form" data-backend-form="ebook">
+                <div class="form-section-title"><span>01</span><div><h2>About this e-book</h2><p>These details will appear with the resource.</p></div></div>
+                <label class="field-label" for="ebook-title">Book title <span>*</span></label><input id="ebook-title" name="title" type="text" placeholder="Enter the title as it appears on the book" required>
+                <div class="field-row"><div><label class="field-label" for="ebook-author">Author or contributor <span>*</span></label><input id="ebook-author" name="author" type="text" placeholder="Author’s name" required></div><div><label class="field-label" for="ebook-category">Category <span>*</span></label><select id="ebook-category" name="category" required><option value="">Choose a category</option><option>Bible study</option><option>Prayer &amp; devotion</option><option>Christian living</option><option>Discipleship</option><option>Church &amp; community</option><option>Other</option></select></div></div>
+                <label class="field-label" for="ebook-description">Short description <span>*</span></label><textarea id="ebook-description" name="description" rows="4" placeholder="What will a reader learn or take away?" required></textarea>
+                <div class="form-section-title form-section-spaced"><span>02</span><div><h2>Add your files</h2><p>Upload the reading file and, if available, its cover artwork.</p></div></div>
+                <label class="field-label" for="ebook-file">E-book file <span>*</span></label><label class="dropzone" for="ebook-file"><span class="upload-icon" aria-hidden="true">↑</span><strong>Choose a PDF to upload</strong><span>PDF · maximum 40 MB</span><span class="selected-file" data-file-name="ebook-file">No file selected</span></label><input class="file-input" id="ebook-file" name="ebook" type="file" accept="application/pdf,.pdf" data-file-input data-max-bytes="41943040" required>
+                <label class="field-label" for="ebook-cover">Cover image <span class="optional">(optional)</span></label><label class="dropzone dropzone-small" for="ebook-cover"><span class="upload-icon" aria-hidden="true">＋</span><strong>Add a cover image</strong><span>JPG, PNG or WebP · maximum 5 MB</span><span class="selected-file" data-file-name="ebook-cover">No file selected</span></label><input class="file-input" id="ebook-cover" name="cover" type="file" accept="image/jpeg,image/png,image/webp" data-file-input data-max-bytes="5242880">
+                <label class="check-row"><input type="checkbox" name="rights-confirmed" required><span>I confirm that I have permission to share this file with the church community. <b>*</b></span></label>
+                <div class="form-notice" role="status" aria-live="polite" data-form-status>This form is ready for your backend. E-books are not published or stored by this frontend.</div>
+                <button class="button button-dark form-submit" type="submit">Prepare e-book <span aria-hidden="true">→</span></button>
+            </form>
+            <aside class="upload-aside"><span class="note-mark" aria-hidden="true">✳</span><p class="eyebrow">A helpful checklist</p><h2>Make it easy<br>to read and <em>find.</em></h2><ul><li>Use the complete title and author name.</li><li>Write a short, useful description.</li><li>Share only files you have permission to distribute.</li><li>Choose a clear cover image if the book has one.</li></ul><p class="aside-small">Publishing, pastor permissions and file storage need to be connected to your backend.</p></aside>
+        </section>
+    </main>
+    <footer class="site-footer"><div class="wrap footer-main"><a class="logo footer-logo" href="index.html"><img src="IMGS/logo.png" alt="" id="footer-logo-img"><span class="brand-copy"><strong>DOMINION</strong><small>CHRISTIAN GATHERING</small></span></a><p>A community growing in faith, sharing Christ’s love and serving together.</p><div class="footer-links"><a href="about.html">About</a><a href="activities.html">Ministries</a><a href="mission.html">Our mission</a><a href="resources.html">Resources</a><a href="ebooks.html">E-books</a><a href="sermons.html">Sermons</a><a href="visit.html">Plan a visit</a><a href="account.html">Member sign in</a></div></div><div class="wrap footer-bottom"><span>© <span data-year>2026</span> Dominion Christian Gathering International</span><span>All are welcome.</span></div></footer>
+</body>
+</html>
