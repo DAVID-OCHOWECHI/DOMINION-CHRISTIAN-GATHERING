@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f8f6f1">
+    <meta name="description" content="See upcoming gatherings and events at Dominion Christian Gathering International.">
+    <link rel="icon" type="image/svg+xml" href="IMGS/favicon.svg">
+    <title>Upcoming Events | Dominion Christian Gathering International</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="STYLES/main.css"><link rel="stylesheet" href="STYLES/nav.css"><link rel="stylesheet" href="STYLES/pages.css">
+    <script src="SCRIPTS/site.js" defer></script><script src="SCRIPTS/events.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header"><nav class="nav wrap" aria-label="Main navigation">
+        <a class="logo" href="index.html" aria-label="Dominion Christian Gathering International home"><img src="IMGS/logo.png" alt="" id="logo-img"><span class="brand-copy"><strong>DOMINION</strong><small>CHRISTIAN GATHERING</small></span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu"><span class="sr-only">Open navigation menu</span><span></span><span></span></button>
+        <ul class="menuLinks" id="primary-menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="index.html#activities">Ministries</a></li><li><a class="active" aria-current="page" href="events.html">Events</a></li><li><a href="mission.html">Our mission</a></li><li><a href="resources.html">Resources</a></li><li><a href="ebooks.html">E-books</a></li><li><a href="sermons.html">Sermons</a></li></ul>
+        <a class="nav-cta" href="account.html">Member sign in <span aria-hidden="true">↗</span></a>
+    </nav></header>
+    <main id="main" class="events-page">
+        <section class="events-heading wrap">
+            <a class="back-link" href="index.html#activities"><span aria-hidden="true">←</span> Weekly activities</a>
+            <p class="eyebrow"><span></span> Gather with us</p>
+            <h1>Coming <em>together.</em></h1>
+            <p>Find an upcoming event and make a little room in your calendar. We’d love to see you there.</p>
+        </section>
+        <section class="events-content wrap">
+            <div class="events-upcoming">
+                <div class="events-section-heading"><div><p class="eyebrow"><span></span> Save the date</p><h2>Upcoming events</h2></div></div>
+                <div class="events-list" data-events-list aria-live="polite">
+                    <p class="events-empty">Loading upcoming events…</p>
+                </div>
+            </div>
+            <section class="event-form-panel" aria-labelledby="add-event-title">
+                <p class="eyebrow"><span></span> Event organiser</p>
+                <h2 id="add-event-title">Add an event</h2>
+                <p class="event-storage-note">Events you add are saved only in this browser and are not shared with other visitors.</p>
+                <form class="event-form" data-event-form>
+                    <label class="field-label" for="event-title">Event name <span>*</span></label>
+                    <input id="event-title" name="title" type="text" maxlength="100" placeholder="e.g. Community thanksgiving" required>
+                    <label class="field-label" for="event-date">Date and time <span>*</span></label>
+                    <input id="event-date" name="date" type="datetime-local" required>
+                    <label class="field-label" for="event-location">Location <span>*</span></label>
+                    <input id="event-location" name="location" type="text" maxlength="120" placeholder="Where will you meet?" required>
+                    <label class="field-label" for="event-description">Details <span class="optional">(optional)</span></label>
+                    <textarea id="event-description" name="description" rows="4" maxlength="500" placeholder="Share a few details about the event"></textarea>
+                    <div class="form-notice" role="status" aria-live="polite" data-event-status>Events are stored in this browser only.</div>
+                    <button class="button button-dark form-submit" type="submit">Save event <span aria-hidden="true">→</span></button>
+                </form>
+            </section>
+        </section>
+    </main>
+    <footer class="site-footer"><div class="wrap footer-main"><a class="logo footer-logo" href="index.html"><img src="IMGS/logo.png" alt="" id="footer-logo-img"><span class="brand-copy"><strong>DOMINION</strong><small>CHRISTIAN GATHERING</small></span></a><p>A community growing in faith, sharing Christ’s love and serving together.</p><div class="footer-links"><a href="about.html">About</a><a href="index.html#activities">Ministries</a><a href="events.html">Events</a><a href="mission.html">Our mission</a><a href="resources.html">Resources</a><a href="ebooks.html">E-books</a><a href="sermons.html">Sermons</a><a href="visit.html">Plan a visit</a><a href="account.html">Member sign in</a></div></div><div class="wrap footer-bottom"><span>© <span data-year>2026</span> Dominion Christian Gathering International</span><span>All are welcome.</span></div></footer>
+</body>
+</html>
